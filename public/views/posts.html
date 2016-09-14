@@ -1,12 +1,11 @@
 <div class="col-md-10">
     <h1>POSTS</h1>
     <div class="form-group">
-        <input type="text" ng-model="query" class="form-control" placeholder="Type post title to filter posts">
+        <input type="text" ng-model="query" ng-minlength="3" class="form-control" placeholder="Type post title to filter posts">
     </div>
     
-    <ul id="posts" class="row">
-        <div class="clearfix" ng-if="($index % 3) == 0"></div>
-        <li dir-paginate="post in posts | filter: query | orderBy: title | itemsPerPage: 9" class="col-md-4">
+    <ul id="posts">
+        <li dir-paginate="post in posts | filter: query | orderBy: title | itemsPerPage: 9">
             
             <h3><a ui-sref="/post({ postId: post.id })">{{ post.title }}</a></h3>
             <p>{{ post.body | limitTo: 60 }}</p>
@@ -19,5 +18,5 @@
     </dir-pagination-controls>
 </div>
 <div class="col-md-2">
-    <a ui-sref="/newPost" class="btn btn-primary">Create new post</a>
+    <a id="createPost" ui-sref="/newPost" class="btn btn-primary">Create new post</a>
 </div>

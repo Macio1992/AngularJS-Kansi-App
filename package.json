@@ -1,0 +1,25 @@
+{
+  "name": "kansi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macio1992/AngularJS-Kansi-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macio1992/AngularJS-Kansi-App/issues"
+  },
+  "homepage": "https://github.com/Macio1992/AngularJS-Kansi-App#readme"
+}

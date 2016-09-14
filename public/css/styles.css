@@ -1,0 +1,36 @@
+ul#posts {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%; }
+  ul#posts li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    min-height: 250px; }
+    @media only screen and (min-width: 320px) {
+      ul#posts li {
+        width: 100%; } }
+    @media only screen and (min-width: 480px) {
+      ul#posts li {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      ul#posts li {
+        width: 50%; } }
+    @media only screen and (min-width: 992px) {
+      ul#posts li {
+        width: 25%; } }
+    @media only screen and (min-width: 1200px) {
+      ul#posts li {
+        width: 25%; } }
+
+#createPost {
+  margin-top: 10%; }
+
+#userInfo {
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  padding: 2%;
+  margin-bottom: 3%; }
+  #userInfo h3 {
+    margin: 1% 0; }
